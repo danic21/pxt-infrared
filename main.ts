@@ -50,7 +50,7 @@ namespace IR {
      * This is a statement block
      */
     //% block
-    export function initIR() {
+    export function initInfrared() {
 
     }
 
@@ -70,20 +70,5 @@ namespace IR {
         }
     }
 
-    /**
-     * This is a reporter block that returns a boolean
-     */
-    //% block
-    export function randomBoolean(): boolean {
-        return false;
-    }
-
-    /**
-     * This is an event handler block
-     */
-    //% block="on event"
-    export function onEvent(handler: () => void) {
-
-    }
 }
  
