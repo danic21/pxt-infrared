@@ -58,7 +58,7 @@ namespace IR {
      * This is a reporter block that returns a number
      */
     //% block
-    export function getPressedKey(): String {
+    export function getPressedKey(): string {
         let tasta = readKey()
         switch (tasta) {
             case 16753245:
