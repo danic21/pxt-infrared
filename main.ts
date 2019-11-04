@@ -50,7 +50,7 @@ namespace IR {
      * This is a statement block
      */
     //% block
-    export function initInfrared() {
+    export function initInfrared(pin : AnalogPin) {
 
     }
 
