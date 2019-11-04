@@ -3,14 +3,16 @@
 //% color="#4C97FF"
 namespace IR {
 
+    let usedPin = AnalogPin.P0;
+
     function wait_for_signal() {
-        while (pins.analogReadPin(AnalogPin.P0) > 500) { }
+        while (pins.analogReadPin(usedPin) > 500) { }
     }
 
 
     function read_on() {
         let c = 0;
-        while (pins.analogReadPin(AnalogPin.P0) < 500 && c < 500) {
+        while (pins.analogReadPin(usedPin) < 500 && c < 500) {
             c++;
         }
         return c;
@@ -18,7 +20,7 @@ namespace IR {
 
     function read_off() {
         let d = 0;
-        while (pins.analogReadPin(AnalogPin.P0) > 500 && d < 500) {
+        while (pins.analogReadPin(usedPin) > 500 && d < 500) {
             d++;
         }
         return d;
@@ -51,7 +53,7 @@ namespace IR {
      */
     //% block
     export function initInfrared(pin : AnalogPin) {
-
+        usedPin = pin
     }
 
     /**
