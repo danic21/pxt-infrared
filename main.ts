@@ -98,7 +98,7 @@ namespace IR {
             case 16726215:
                 return "ok"
             default:
-                return convertToText(tasta)
+                return "n/a"
         }
     }
 
