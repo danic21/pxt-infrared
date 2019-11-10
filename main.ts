@@ -1,7 +1,7 @@
 // Infrared extension
 
 //% color="#4C97FF"
-namespace Micro:Bit-IR {
+namespace IR {
 
     let usedPin = AnalogPin.P0;
 
