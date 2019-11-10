@@ -52,7 +52,7 @@ namespace IR {
      * This is a statement block
      */
     //% block
-    export function initInfrared(pin : AnalogPin) {
+    export function initInfrared(pin: AnalogPin) {
         usedPin = pin
     }
 
@@ -67,6 +67,36 @@ namespace IR {
                 return "1"
             case 16736925:
                 return "2"
+            case 16769565:
+                return "3"
+            case 16720605:
+                return "4"
+            case 16712445:
+                return "5"
+            case 16761405:
+                return "6"
+            case 16769055:
+                return "7"
+            case 16754775:
+                return "8"
+            case 16748655:
+                return "9"
+            case 16750695:
+                return "0"
+            case 16738455:
+                return "*"
+            case 16756815:
+                return "#"
+            case 16718055:
+                return "u"
+            case 16730805:
+                return "d"
+            case 16716015:
+                return "<"
+            case 16734885:
+                return ">"
+            case 16726215:
+                return "ok"
             default:
                 return convertToText(tasta)
         }
